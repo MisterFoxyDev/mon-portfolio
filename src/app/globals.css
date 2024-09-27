@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --font-geist-sans: "Geist Sans", sans-serif;
+    --font-geist-mono: "Geist Mono", monospace;
+  }
+}
+
+@layer components {
+  .border-corners {
+    @apply relative;
+  }
+
+  .border-corners::before,
+  .border-corners::after {
+    @apply absolute h-5 w-5 border-2;
+    content: "";
+  }
+
+  .border-corners::before {
+    @apply left-0 top-0 border-b-0 border-r-0 border-zinc-600 dark:border-zinc-300;
+  }
+
+  .border-corners::after {
+    @apply bottom-0 right-0 border-l-0 border-t-0 border-zinc-600 dark:border-zinc-300;
   }
 }

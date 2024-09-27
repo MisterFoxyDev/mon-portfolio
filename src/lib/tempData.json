@@ -1,0 +1,75 @@
+[
+  {
+    "origine": "Udemy",
+    "title": "Facturier",
+    "description": {
+      "resume": "",
+      "complete": "Projet tutoriel de Donkey Geek dans le cadre d'un cours complet sur Typescript (Udemy)"
+    },
+    "technologies": {
+      "principales": ["Typescript"],
+      "librairies": []
+    },
+    "imageUrl": "/images/pexels-harold-vasquez-853421-2653362.jpg",
+    "siteUrl": "https://misterfoxydev.github.io/Facturier-typescript/"
+  },
+  {
+    "origine": "OpenClassrooms",
+    "title": "Booki",
+    "description": {
+      "resume": "",
+      "complete": "Premier projet de soutenance OpenClassrooms, concernant le découpage d'une maquette et une intégration responsive"
+    },
+    "technologies": {
+      "principales": ["HTML", "CSS"],
+      "librairies": []
+    },
+    "imageUrl": "/images/pexels-markusspiske-177598.jpg",
+    "siteUrl": "https://misterfoxydev.github.io/booki-starter-code/"
+  },
+  {
+    "origine": "Personnel",
+    "title": "Eduquizz",
+    "description": {
+      "resume": "Projet personnel, site de quizzes en ligne",
+      "complete": "J'ai assuré seul le développement de bout en bout, de l'intégration à la régie publicitaire."
+    },
+    "technologies": {
+      "principales": ["React", "Next.js", "MUI"],
+      "librairies": [
+        "NextAuth.js",
+        "MongoDB",
+        "mongoose",
+        "nodemailer",
+        "bcrypt",
+        "uuid",
+        "react-multi-carousel",
+        "jsonwebtoken"
+      ]
+    },
+    "imageUrl": "/images/pexels-markusspiske-225769.jpg",
+    "siteUrl": "https://eduquizz.fr"
+  },
+  {
+    "origine": "OpenClassrooms",
+    "title": "Optimisation site photographe",
+    "description": {
+      "resume": "Optimisation des performances, de l'accessibilité et du référencement",
+      "complete": "Troisième projet de soutenance OpenClassrooms, concernant l'optimisation du site d'une photographe'"
+    },
+    "technologies": {
+      "principales": [
+        "HTML",
+        "Lighthouse",
+        "WAVE",
+        "Gimp",
+        "Convertisseur et compresseur d'image",
+        "Rich Snippet Google",
+        "Schema.org"
+      ],
+      "librairies": []
+    },
+    "imageUrl": "/images/rapport-lighthouse.png",
+    "siteUrl": "https://misterfoxydev.github.io/nina-carducci.github.io/"
+  }
+]
