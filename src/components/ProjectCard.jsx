@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { Button } from "./ui/button";
 
 const ProjectCard = ({
   title,
@@ -36,12 +37,12 @@ const ProjectCard = ({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false }}
-      transition={{ duration: 0.1 }}
+      transition={{ duration: 0.2 }}
       variants={variants}
       whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
       className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-transform duration-300 hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)] dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60"
     >
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-[length:400%_400%] opacity-70"></div>
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-[length:400%_400%] opacity-30 dark:opacity-60"></div>
       <div className="relative z-10 p-4">
         <div className="relative">
           <Image
@@ -49,7 +50,7 @@ const ProjectCard = ({
             alt={title}
             width={640}
             height={640}
-            className={`mb-2 h-48 w-full rounded-lg object-cover ${
+            className={`mb-2 h-48 w-full rounded-lg object-fill ${
               animatedImageUrl ? "hover:opacity-0" : ""
             }`}
           />
@@ -59,7 +60,7 @@ const ProjectCard = ({
               alt={title}
               width={640}
               height={640}
-              className="absolute left-0 top-0 mb-2 h-48 w-full rounded-lg object-cover opacity-0 hover:opacity-100"
+              className="absolute left-0 top-0 mb-2 h-48 w-full rounded-lg object-fill opacity-0 hover:opacity-100"
             />
           )}
         </div>
@@ -68,7 +69,10 @@ const ProjectCard = ({
         </h1>
         <p className="mb-2">{description.resume}</p>
         <p className="mb-2 text-sm text-zinc-900 dark:text-zinc-300">
-          Technologies: {technologies.principales.join(", ")}
+          <span className="text-lg font-semibold">
+            Technologies principales :
+          </span>{" "}
+          {technologies.principales.join(", ")}
         </p>
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -81,11 +85,13 @@ const ProjectCard = ({
             <p className="mb-2 text-base text-zinc-900 dark:text-zinc-300">
               {description.complete}
             </p>
-            {technologies.librairies.length > 0 && (
+            {technologies.secondaires.length > 0 && (
               <div>
-                <h3 className="text-lg font-semibold">Librairies:</h3>
+                <h3 className="text-base font-semibold">
+                  Technologies secondaires:
+                </h3>
                 <ul className="mb-4 list-inside list-disc">
-                  {technologies.librairies.map((lib, index) => (
+                  {technologies.secondaires.map((lib, index) => (
                     <li
                       key={index}
                       className="text-zinc-600 dark:text-zinc-200"
@@ -99,14 +105,18 @@ const ProjectCard = ({
           </div>
         )}
         <div className="flex justify-center">
-          <Link
-            href={siteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-4 flex max-w-28 items-center justify-center rounded-xl bg-blue-500 px-4 py-2 font-bold text-zinc-900 transition duration-300 hover:bg-blue-700 dark:bg-blue-700 dark:text-zinc-300 hover:dark:bg-blue-500"
-          >
-            Visiter {<HiOutlineExternalLink className="ml-2" />}
-          </Link>
+          {siteUrl ? (
+            <Link
+              href={siteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-4 flex max-w-28 items-center justify-center rounded-xl bg-blue-500 px-4 py-2 font-bold text-zinc-900 transition duration-300 hover:bg-blue-700 dark:bg-blue-700 dark:text-zinc-300 hover:dark:bg-blue-500"
+            >
+              Visiter {<HiOutlineExternalLink className="ml-2" />}
+            </Link>
+          ) : (
+            <Button disabled="true">En construction</Button>
+          )}
         </div>
       </div>
     </motion.div>

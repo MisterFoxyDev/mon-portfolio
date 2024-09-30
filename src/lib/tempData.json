@@ -4,13 +4,13 @@
     "title": "Facturier",
     "description": {
       "resume": "",
-      "complete": "Projet tutoriel de Donkey Geek dans le cadre d'un cours complet sur Typescript (Udemy)"
+      "complete": "Projet tutoriel de Donkey Geek dans le cadre d'un cours complet sur Typescript (Udemy). Permet de créer, stocker et imprimer des devis et des factures."
     },
     "technologies": {
       "principales": ["Typescript"],
-      "librairies": []
+      "secondaires": []
     },
-    "staticImageUrl": "/images/pexels-harold-vasquez-853421-2653362.jpg",
+    "staticImageUrl": "/images/facturier.png",
     "animatedImageUrl": "",
     "siteUrl": "https://misterfoxydev.github.io/Facturier-typescript/"
   },
@@ -18,14 +18,14 @@
     "origine": "OpenClassrooms",
     "title": "Booki",
     "description": {
-      "resume": "",
+      "resume": "Site de réservation pour des logements et activités",
       "complete": "Premier projet de soutenance OpenClassrooms, concernant le découpage d'une maquette et une intégration responsive"
     },
     "technologies": {
       "principales": ["HTML", "CSS"],
-      "librairies": []
+      "secondaires": []
     },
-    "staticImageUrl": "/images/pexels-markusspiske-177598.jpg",
+    "staticImageUrl": "/images/booki.png",
     "animatedImageUrl": "",
     "siteUrl": "https://misterfoxydev.github.io/booki-starter-code/"
   },
@@ -38,7 +38,7 @@
     },
     "technologies": {
       "principales": ["React", "Next.js", "MUI"],
-      "librairies": [
+      "secondaires": [
         "NextAuth.js",
         "MongoDB",
         "mongoose",
@@ -49,7 +49,7 @@
         "jsonwebtoken"
       ]
     },
-    "staticImageUrl": "/images/pexels-markusspiske-225769.jpg",
+    "staticImageUrl": "/images/eduquizz.png",
     "animatedImageUrl": "",
     "siteUrl": "https://eduquizz.fr"
   },
@@ -66,11 +66,10 @@
         "Lighthouse",
         "WAVE",
         "Gimp",
-        "Convertisseur et compresseur d'image",
         "Rich Snippet Google",
         "Schema.org"
       ],
-      "librairies": []
+      "secondaires": ["Convertisseur et compresseur d'image"]
     },
     "staticImageUrl": "/images/rapport-lighthouse.png",
     "animatedImageUrl": "/images/carducci-animation.gif",
@@ -81,11 +80,11 @@
     "title": "Natours",
     "description": {
       "resume": "Intégration pour un site de randonnées",
-      "complete": "Dans le cadre d'un cours avancé sur le CSS (Udemy). Particularité : pas d'utilisation de flexbox ni grid"
+      "complete": "Dans le cadre d'un cours avancé sur le CSS (Udemy/Jonas.io). Particularité : pas d'utilisation de flexbox ni grid"
     },
     "technologies": {
-      "principales": ["CSS", "SASS", "méthodologie BEM", "organisation 7-1"],
-      "librairies": []
+      "principales": ["CSS", "SASS", "méthodologie BEM"],
+      "secondaires": ["organisation 7-1"]
     },
     "staticImageUrl": "/images/natours.png",
     "animatedImageUrl": "/images/natours-animation.gif",
@@ -95,14 +94,23 @@
     "origine": "Udemy",
     "title": "The Wild Oasis",
     "description": {
-      "resume": "",
-      "complete": ""
+      "resume": "Application dashboard pour un site de réservation de logements",
+      "complete": "Dans le cadre d'un cours avancé sur React (Udemy/Jonas.io)."
     },
     "technologies": {
-      "principales": [],
-      "librairies": []
+      "principales": ["React", "React Query", "Supabase"],
+      "secondaires": [
+        "Custom hooks",
+        "Faker Api's",
+        "React Hook Form",
+        "React-hot-toasts",
+        "react-icons",
+        "Styled Components",
+        "cloneElement()",
+        "createPortal()"
+      ]
     },
-    "staticImageUrl": "",
+    "staticImageUrl": "/images/the-wild-oasis-2.png",
     "animatedImageUrl": "",
     "siteUrl": ""
   },
@@ -115,7 +123,7 @@
     },
     "technologies": {
       "principales": [],
-      "librairies": []
+      "secondaires": []
     },
     "staticImageUrl": "",
     "animatedImageUrl": "",

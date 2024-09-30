@@ -57,11 +57,11 @@ const ProjectCard = ({
             <p className="mb-2 text-base text-zinc-900 dark:text-zinc-300">
               {description.complete}
             </p>
-            {technologies.librairies.length > 0 && (
+            {technologies.secondaires.length > 0 && (
               <div>
-                <h3 className="text-lg font-semibold">Librairies:</h3>
+                <h3 className="text-lg font-semibold">Secondaires:</h3>
                 <ul className="mb-4 list-inside list-disc">
-                  {technologies.librairies.map((lib, index) => (
+                  {technologies.secondaires.map((lib, index) => (
                     <li
                       key={index}
                       className="text-zinc-600 dark:text-zinc-200"

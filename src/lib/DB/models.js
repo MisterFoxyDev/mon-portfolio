@@ -18,7 +18,7 @@ const ProjectSchema = new mongoose.Schema(
       principales: {
         type: [String],
       },
-      librairies: {
+      secondaires: {
         type: [String],
       },
     },

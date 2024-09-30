@@ -7,7 +7,7 @@ import ProjectCard from "@/components/ProjectCard";
 const ProjectsList = ({ projets }) => {
   return (
     <section id="projets" className="pt-24 text-zinc-600 dark:text-zinc-300">
-      <h1 className="mb-4 text-center font-serif text-3xl tracking-wider">
+      <h1 className="mb-4 text-center font-serif text-2xl tracking-wider sm:text-3xl">
         {<BsAlignEnd className="inline-block" />} Mes projets{" "}
         {<BsAlignStart className="inline-block" />}
       </h1>
