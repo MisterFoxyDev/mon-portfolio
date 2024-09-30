@@ -4,28 +4,66 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({
   title,
   description,
   technologies,
-  imageUrl,
+  staticImageUrl,
+  animatedImageUrl,
   siteUrl,
+  animationDirection,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x:
+        animationDirection === "left"
+          ? -100
+          : animationDirection === "right"
+          ? 100
+          : 0,
+      y: animationDirection === "bottom" ? 100 : 0,
+    },
+    visible: { opacity: 1, x: 0, y: 0 },
+  };
+
   return (
-    <div className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-transform duration-300 hover:scale-105 hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)] dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 0.1 }}
+      variants={variants}
+      whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
+      className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-transform duration-300 hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)] dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60"
+    >
       <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-[length:400%_400%] opacity-70"></div>
       <div className="relative z-10 p-4">
-        <Image
-          src={imageUrl}
-          alt={title}
-          width={640}
-          height={640}
-          className="mb-2 h-48 w-full rounded-lg object-cover"
-        />
-        <h1 className="text-xl font-bold text-zinc-900 dark:text-zinc-300">
+        <div className="relative">
+          <Image
+            src={staticImageUrl}
+            alt={title}
+            width={640}
+            height={640}
+            className={`mb-2 h-48 w-full rounded-lg object-cover ${
+              animatedImageUrl ? "hover:opacity-0" : ""
+            }`}
+          />
+          {animatedImageUrl && (
+            <Image
+              src={animatedImageUrl}
+              alt={title}
+              width={640}
+              height={640}
+              className="absolute left-0 top-0 mb-2 h-48 w-full rounded-lg object-cover opacity-0 hover:opacity-100"
+            />
+          )}
+        </div>
+        <h1 className="font-serif text-xl font-bold text-zinc-900 dark:text-zinc-300">
           {title}
         </h1>
         <p className="mb-2">{description.resume}</p>
@@ -71,7 +109,7 @@ const ProjectCard = ({
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -11,6 +11,22 @@ const CompetencesList = () => {
         {<BsAlignEnd className="inline-block" />} Mes compétences{" "}
         {<BsAlignStart className="inline-block" />}
       </h1>
+      <main className="flex flex-wrap justify-center space-x-5">
+        <div className="container w-6/12">
+          <h2 className="text-center text-2xl font-semibold">Développement</h2>
+          <ul></ul>
+        </div>
+        <div>
+          <h2></h2>
+          <ul></ul>
+        </div>
+        <div className="container w-5/12">
+          <h2 className="whitespace-nowrap text-center text-2xl font-semibold">
+            Soft Skills
+          </h2>
+          <ul></ul>
+        </div>
+      </main>
     </section>
   );
 };

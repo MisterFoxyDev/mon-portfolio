@@ -26,31 +26,7 @@ const Intro = () => {
         <Link href="#projets">
           <LuArrowDownFromLine className="mx-auto mt-8 text-3xl" />
         </Link>
-
-        {/* <p className="mt-3 font-light">
-          Développeur web full-stack, passionné par la technologie et le code,
-          je maîtrise des langages et environnements tels que JavaScript, HTML,
-          CSS, Node.js, React et Next.js. Après avoir débuté la programmation en
-          autodidacte en 2022, j&apos;ai complété une formation intensive de 6
-          mois chez OpenClassrooms, ainsi que des cours spécialisés sur Udemy.
-          Mes projets, dont un site de quiz en ligne, reflètent mon engagement
-          et mon envie de continuellement apprendre. Je possède également des
-          compétences en UI/UX design, SEO, gestion de projet (notamment en
-          Agile), Typescript, GitHub,... Ce portfolio est l&apos;aboutissement
-          de mon parcours en formation, et témoigne de ma passion pour le
-          développement web et applicatif.
-        </p> */}
       </div>
-      {/* <div className="relative">
-        <Image
-          className="flex-1 rounded-lg grayscale"
-          src={authorImage}
-          alt="Hamed Bahram"
-          width={175}
-          height={175}
-          priority
-        />
-      </div> */}
     </section>
   );
 };

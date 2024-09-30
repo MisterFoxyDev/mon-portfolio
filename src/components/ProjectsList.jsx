@@ -2,7 +2,6 @@
 
 import { BsAlignEnd } from "react-icons/bs";
 import { BsAlignStart } from "react-icons/bs";
-
 import ProjectCard from "@/components/ProjectCard";
 
 const ProjectsList = ({ projets }) => {
@@ -12,17 +11,22 @@ const ProjectsList = ({ projets }) => {
         {<BsAlignEnd className="inline-block" />} Mes projets{" "}
         {<BsAlignStart className="inline-block" />}
       </h1>
-      <div className="flex max-w-6xl flex-wrap justify-center">
-        {projets.map((projet) => (
-          <ProjectCard
-            key={projet.id}
-            title={projet.title}
-            description={projet.description}
-            technologies={projet.technologies}
-            imageUrl={projet.imageUrl}
-            siteUrl={projet.siteUrl}
-          />
-        ))}
+      <div className="flex max-w-6xl flex-wrap justify-center gap-5">
+        {projets.map((projet, index) => {
+          const animationDirection = index % 2 === 0 ? "left" : "right";
+          return (
+            <ProjectCard
+              key={projet.id}
+              title={projet.title}
+              description={projet.description}
+              technologies={projet.technologies}
+              staticImageUrl={projet.staticImageUrl}
+              animatedImageUrl={projet.animatedImageUrl}
+              siteUrl={projet.siteUrl}
+              animationDirection={animationDirection}
+            />
+          );
+        })}
       </div>
     </section>
   );

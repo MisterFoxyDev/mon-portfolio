@@ -10,7 +10,8 @@
       "principales": ["Typescript"],
       "librairies": []
     },
-    "imageUrl": "/images/pexels-harold-vasquez-853421-2653362.jpg",
+    "staticImageUrl": "/images/pexels-harold-vasquez-853421-2653362.jpg",
+    "animatedImageUrl": "",
     "siteUrl": "https://misterfoxydev.github.io/Facturier-typescript/"
   },
   {
@@ -24,7 +25,8 @@
       "principales": ["HTML", "CSS"],
       "librairies": []
     },
-    "imageUrl": "/images/pexels-markusspiske-177598.jpg",
+    "staticImageUrl": "/images/pexels-markusspiske-177598.jpg",
+    "animatedImageUrl": "",
     "siteUrl": "https://misterfoxydev.github.io/booki-starter-code/"
   },
   {
@@ -47,7 +49,8 @@
         "jsonwebtoken"
       ]
     },
-    "imageUrl": "/images/pexels-markusspiske-225769.jpg",
+    "staticImageUrl": "/images/pexels-markusspiske-225769.jpg",
+    "animatedImageUrl": "",
     "siteUrl": "https://eduquizz.fr"
   },
   {
@@ -55,7 +58,7 @@
     "title": "Optimisation site photographe",
     "description": {
       "resume": "Optimisation des performances, de l'accessibilité et du référencement",
-      "complete": "Troisième projet de soutenance OpenClassrooms, concernant l'optimisation du site d'une photographe'"
+      "complete": "Troisième projet de soutenance OpenClassrooms, concernant l'optimisation du site d'une photographe"
     },
     "technologies": {
       "principales": [
@@ -69,7 +72,53 @@
       ],
       "librairies": []
     },
-    "imageUrl": "/images/rapport-lighthouse.png",
+    "staticImageUrl": "/images/rapport-lighthouse.png",
+    "animatedImageUrl": "/images/carducci-animation.gif",
     "siteUrl": "https://misterfoxydev.github.io/nina-carducci.github.io/"
+  },
+  {
+    "origine": "Udemy",
+    "title": "Natours",
+    "description": {
+      "resume": "Intégration pour un site de randonnées",
+      "complete": "Dans le cadre d'un cours avancé sur le CSS (Udemy). Particularité : pas d'utilisation de flexbox ni grid"
+    },
+    "technologies": {
+      "principales": ["CSS", "SASS", "méthodologie BEM", "organisation 7-1"],
+      "librairies": []
+    },
+    "staticImageUrl": "/images/natours.png",
+    "animatedImageUrl": "/images/natours-animation.gif",
+    "siteUrl": "https://misterfoxydev.github.io/Natours/"
+  },
+  {
+    "origine": "Udemy",
+    "title": "The Wild Oasis",
+    "description": {
+      "resume": "",
+      "complete": ""
+    },
+    "technologies": {
+      "principales": [],
+      "librairies": []
+    },
+    "staticImageUrl": "",
+    "animatedImageUrl": "",
+    "siteUrl": ""
+  },
+  {
+    "origine": "Udemy",
+    "title": "Fast React Pizza",
+    "description": {
+      "resume": "",
+      "complete": ""
+    },
+    "technologies": {
+      "principales": [],
+      "librairies": []
+    },
+    "staticImageUrl": "",
+    "animatedImageUrl": "",
+    "siteUrl": ""
   }
 ]

@@ -5,6 +5,7 @@ import fetchProjectsFromDatabase from "@/lib/fetchProjectsFromDatabase";
 
 const Home = async () => {
   const projets = await fetchProjectsFromDatabase();
+  console.log("🚀 ~ Home ~ projets:", projets);
 
   return (
     <section className="pb-24 pt-40">

@@ -22,7 +22,10 @@ const ProjectSchema = new mongoose.Schema(
         type: [String],
       },
     },
-    imageUrl: {
+    staticImageUrl: {
+      type: String,
+    },
+    animatedImageUrl: {
       type: String,
     },
     siteUrl: {

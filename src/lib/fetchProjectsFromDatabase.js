@@ -11,7 +11,8 @@ const fetchProjectsFromDatabase = async () => {
     description: project.description,
     technologies: project.technologies,
     origine: project.origine,
-    imageUrl: project.imageUrl,
+    staticImageUrl: project.staticImageUrl,
+    animatedImageUrl: project.animatedImageUrl,
     siteUrl: project.siteUrl,
   }));
 };
