@@ -32,8 +32,8 @@ const Intro = () => {
           <SiCss3 className="text-4xl text-blue-600" />
           <SiJavascript className="text-4xl text-yellow-500" />
           <SiReact className="text-4xl text-cyan-500" />
-          <SiNodedotjs className="text-4xl text-green-500" />
-          <SiNextdotjs className="text-4xl text-black" />
+          <SiNodedotjs className="text-4xl text-green-600" />
+          <SiNextdotjs className="text-4xl text-black dark:text-gray-200" />
         </div>
         <p className="mt-4 font-semibold">
           Ce portfolio est l&apos;aboutissement de{" "}

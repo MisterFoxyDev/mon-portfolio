@@ -44,7 +44,7 @@ const ProjectCard = ({
       whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
       className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-transform duration-300 hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)] dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60"
     >
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-orange-600 via-blue-600 to-orange-600 bg-[length:400%_400%] opacity-30 dark:opacity-60"></div>
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-violet-800 via-blue-800 to-violet-600 bg-[length:400%_400%] opacity-70 dark:opacity-80"></div>
       <div className="relative z-10 p-4">
         <div className="relative">
           <Image
@@ -70,7 +70,9 @@ const ProjectCard = ({
         <h1 className="font-serif text-xl font-bold text-zinc-900 dark:text-zinc-300">
           {title}
         </h1>
-        <p className="mb-2">{description.resume}</p>
+        <p className="mb-2 text-zinc-800 dark:text-zinc-300">
+          {description.resume}
+        </p>
         <p className="mb-2 text-sm text-zinc-900 dark:text-zinc-300">
           <span className="text-lg font-semibold">
             Technologies principales :
