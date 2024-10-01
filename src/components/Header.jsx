@@ -19,7 +19,7 @@ const Header = () => {
           <li className="flex justify-center">
             <Link
               className="px-3 text-xs font-semibold max-[465px]:px-2 sm:text-lg"
-              href="#projets"
+              href="/#projets"
             >
               Projets
             </Link>

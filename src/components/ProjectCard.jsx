@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+
 import { useState } from "react";
-import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { GoProjectSymlink } from "react-icons/go";
+
+import { Button } from "./ui/button";
 
 const ProjectCard = ({
   title,
@@ -128,7 +129,7 @@ const ProjectCard = ({
               Visiter {<GoProjectSymlink className="ml-2" />}
             </Link>
           ) : (
-            <Button disabled="true">En construction</Button>
+            <Button disabled={true}>En construction</Button>
           )}
         </div>
       </div>

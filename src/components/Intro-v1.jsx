@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { LuArrowDownFromLine } from "react-icons/lu";
 import { ReactTyped } from "react-typed";
@@ -16,33 +14,14 @@ const Intro = () => {
   return (
     <section className="border-corners flex flex-col-reverse items-start gap-x-10 gap-y-4 p-6 text-zinc-600 md:flex-row md:items-center">
       <div className="mt-2 flex-1 dark:text-zinc-300 md:mt-0">
-        <h1 className="font-serif text-2xl font-bold">
-          Salut ! Je suis{" "}
-          <span>
-            <ReactTyped
-              startWhenVisible
-              strings={["Hugo.", "ton futur développeur !"]}
-              loop
-              typeSpeed={80}
-              backSpeed={60}
-              smartBackspace
-              shuffle={false}
-              backDelay={1500}
-              fadeOut={true}
-              fadeOutDelay={200}
-              loopCount={0}
-              showCursor
-              cursorChar="|"
-            />
-          </span>
-        </h1>
-        <p className="mt-4 text-justify font-medium">
+        <h1 className="font-serif text-2xl font-bold">Salut ! Je suis Hugo.</h1>
+        <p className="mt-4 font-medium">
           Développeur web full-stack, junior mais <i>passionné</i>, j&apos;ai
           acquis de solides compétences dans les technologies <i>modernes</i> de
           développement, au travers d&apos;une formation rigoureuse et complète,
           alimentée par une grande curiosité et une soif d&apos;apprendre.
         </p>
-        <p className="mt-4 text-justify font-medium">
+        <p className="mt-4 font-medium">
           Familier du HTML, CSS et JavaScript, avec une appétance particulière
           pour les environnements React, Node.js et Next.js, je possède
           également des compétences en gestion de projet (notamment en Agile),
@@ -56,7 +35,7 @@ const Intro = () => {
           <SiNodedotjs className="text-4xl text-green-600" />
           <SiNextdotjs className="text-4xl text-black dark:text-gray-200" />
         </div>
-        <p className="mt-4 text-center font-semibold">
+        <p className="mt-4 font-semibold">
           Ce portfolio est l&apos;aboutissement de{" "}
           {
             <Link href="/parcours">
