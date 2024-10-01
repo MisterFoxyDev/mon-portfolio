@@ -113,20 +113,5 @@
     "staticImageUrl": "/images/the-wild-oasis-2.png",
     "animatedImageUrl": "",
     "siteUrl": ""
-  },
-  {
-    "origine": "Udemy",
-    "title": "Fast React Pizza",
-    "description": {
-      "resume": "",
-      "complete": ""
-    },
-    "technologies": {
-      "principales": [],
-      "secondaires": []
-    },
-    "staticImageUrl": "",
-    "animatedImageUrl": "",
-    "siteUrl": ""
   }
 ]

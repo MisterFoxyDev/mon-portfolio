@@ -6,6 +6,8 @@ import { useState } from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { GoProjectSymlink } from "react-icons/go";
 
 const ProjectCard = ({
   title,
@@ -42,7 +44,7 @@ const ProjectCard = ({
       whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
       className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-transform duration-300 hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)] dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60"
     >
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-[length:400%_400%] opacity-30 dark:opacity-60"></div>
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-orange-600 via-blue-600 to-orange-600 bg-[length:400%_400%] opacity-30 dark:opacity-60"></div>
       <div className="relative z-10 p-4">
         <div className="relative">
           <Image
@@ -61,6 +63,7 @@ const ProjectCard = ({
               width={640}
               height={640}
               className="absolute left-0 top-0 mb-2 h-48 w-full rounded-lg object-fill opacity-0 hover:opacity-100"
+              unoptimized
             />
           )}
         </div>
@@ -78,7 +81,15 @@ const ProjectCard = ({
           onClick={() => setIsOpen(!isOpen)}
           className="mb-2 text-blue-700 hover:underline focus:outline-none dark:text-blue-300"
         >
-          {isOpen ? "Moins d'infos" : "Plus d'infos"}
+          {isOpen ? (
+            <>
+              Moins d&apos;infos <MdKeyboardArrowUp className="inline-block" />
+            </>
+          ) : (
+            <>
+              Plus d&apos;infos <MdKeyboardArrowDown className="inline-block" />
+            </>
+          )}
         </button>
         {isOpen && (
           <div className="mt-2">
@@ -112,7 +123,7 @@ const ProjectCard = ({
               rel="noopener noreferrer"
               className="ml-4 flex max-w-28 items-center justify-center rounded-xl bg-blue-500 px-4 py-2 font-bold text-zinc-900 transition duration-300 hover:bg-blue-700 dark:bg-blue-700 dark:text-zinc-300 hover:dark:bg-blue-500"
             >
-              Visiter {<HiOutlineExternalLink className="ml-2" />}
+              Visiter {<GoProjectSymlink className="ml-2" />}
             </Link>
           ) : (
             <Button disabled="true">En construction</Button>

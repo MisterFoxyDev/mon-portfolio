@@ -3,9 +3,8 @@ import Intro from "@/components/Intro";
 import ProjectsList from "@/components/ProjectsList";
 import fetchProjectsFromDatabase from "@/lib/fetchProjectsFromDatabase";
 
-const Home = async () => {
+const HomePage = async () => {
   const projets = await fetchProjectsFromDatabase();
-  console.log("🚀 ~ Home ~ projets:", projets);
 
   return (
     <section className="pb-24 pt-40">
@@ -18,4 +17,4 @@ const Home = async () => {
   );
 };
 
-export default Home;
+export default HomePage;

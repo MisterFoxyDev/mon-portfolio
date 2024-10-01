@@ -1,34 +1,101 @@
 import { BsAlignEnd } from "react-icons/bs";
 import { BsAlignStart } from "react-icons/bs";
+import { GiSkills } from "react-icons/gi";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const CompetencesList = () => {
   return (
-    <section
-      id="competences"
-      className="pt-24 text-zinc-600 dark:text-zinc-300"
-    >
+    <section id="competences" className="text-zinc-600 dark:text-zinc-300">
       <h1 className="mb-4 text-center font-serif text-2xl tracking-wider sm:text-3xl">
-        {<BsAlignEnd className="inline-block" />} Mes compétences{" "}
-        {<BsAlignStart className="inline-block" />}
+        {<BsAlignEnd className="inline-block text-sm sm:text-xl" />} Mes
+        compétences {<GiSkills className="inline-block text-base sm:text-xl" />}{" "}
+        {<BsAlignStart className="inline-block text-sm sm:text-xl" />}
       </h1>
-      <main className="flex flex-wrap justify-center space-x-5">
-        <div className="container w-6/12">
-          <h2 className="text-center text-xl font-semibold sm:text-2xl">
-            Développement
-          </h2>
-          <ul></ul>
-        </div>
-        <div>
-          <h2></h2>
-          <ul></ul>
-        </div>
-        <div className="container w-5/12">
-          <h2 className="whitespace-nowrap text-center text-xl font-semibold sm:text-2xl">
-            Soft Skills
-          </h2>
-          <ul></ul>
-        </div>
-      </main>
+      <Tabs defaultValue="frontend" className="w-full">
+        <TabsList className="mb-4 flex w-full justify-start space-x-0 overflow-x-auto whitespace-nowrap sm:justify-center sm:space-x-4">
+          <TabsTrigger value="frontend">Frontend</TabsTrigger>
+          <TabsTrigger value="backend">Backend</TabsTrigger>
+          <TabsTrigger value="transversales">
+            Compétences Transversales
+          </TabsTrigger>
+          <TabsTrigger value="technologies">Technologies et Outils</TabsTrigger>
+        </TabsList>
+        <TabsContent value="frontend">
+          <div className="container mx-auto">
+            <h2 className="text-center text-xl font-semibold sm:text-2xl">
+              Frontend
+            </h2>
+            <ul className="list-inside list-disc">
+              <li>JavaScript moderne</li>
+              <li>TypeScript</li>
+              <li>HTML, CSS</li>
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>SASS</li>
+              <li>Client-Side Rendering (CSR)</li>
+              <li>Server-Side Rendering (SSR)</li>
+              <li>
+                Gestion de données locales (Context API, useReducer, Redux
+                Toolkit)
+              </li>
+            </ul>
+          </div>
+        </TabsContent>
+        <TabsContent value="backend">
+          <div className="container mx-auto">
+            <h2 className="text-center text-xl font-semibold sm:text-2xl">
+              Backend
+            </h2>
+            <ul className="list-inside list-disc">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>NoSQL (MongoDB + Mongoose)</li>
+              <li>SQL (mySQL, PostgreSQL)</li>
+              <li>Server Actions</li>
+              <li>Server Components</li>
+            </ul>
+          </div>
+        </TabsContent>
+        <TabsContent value="transversales">
+          <div className="container mx-auto">
+            <h2 className="text-center text-xl font-semibold sm:text-2xl">
+              Compétences Transversales
+            </h2>
+            <ul className="list-inside list-disc">
+              <li>Veille technologique</li>
+              <li>Gestion de projet (méthodes en cascade, Agile)</li>
+              <li>Polyvalence</li>
+              <li>Adaptabilité</li>
+              <li>Efficacité</li>
+              <li>Réactivité</li>
+              <li>Travail d&apos;équipe (communication, clarté)</li>
+              <li>Organisation</li>
+            </ul>
+          </div>
+        </TabsContent>
+        <TabsContent value="technologies">
+          <div className="container mx-auto">
+            <h2 className="text-center text-xl font-semibold sm:text-2xl">
+              Technologies et Outils
+            </h2>
+            <ul className="list-inside list-disc">
+              <li>GitHub</li>
+              <li>Performances web</li>
+              <li>Sécurité web</li>
+              <li>
+                Connaissance approfondie des couches d&apos;abstraction de
+                JavaScript et de son fonctionnement interne (moteur et runtime,
+                call stack et heap, microtâches et callback queue, boucle
+                d&apos;événements, phases de capture et de bouillonnement, etc.)
+              </li>
+              <li>Programmation fonctionelle et Orienté Objet</li>
+              <li>Notions de prompt engineering (IA)</li>
+              <li>Gestion de régie publicitaire (Google AdSense)</li>
+            </ul>
+          </div>
+        </TabsContent>
+      </Tabs>
     </section>
   );
 };

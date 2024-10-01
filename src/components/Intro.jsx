@@ -1,5 +1,14 @@
 import Link from "next/link";
 import { LuArrowDownFromLine } from "react-icons/lu";
+import { FiArrowRight } from "react-icons/fi";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiNextdotjs,
+} from "react-icons/si"; // Import des icônes
 
 const Intro = () => {
   return (
@@ -18,9 +27,25 @@ const Intro = () => {
           également des compétences en gestion de projet (notamment en Agile),
           en UI/UX design, SEO, accessibilité,...
         </p>
+        <div className="mt-4 flex justify-center space-x-4">
+          <SiHtml5 className="text-4xl text-orange-600" />
+          <SiCss3 className="text-4xl text-blue-600" />
+          <SiJavascript className="text-4xl text-yellow-500" />
+          <SiReact className="text-4xl text-cyan-500" />
+          <SiNodedotjs className="text-4xl text-green-500" />
+          <SiNextdotjs className="text-4xl text-black" />
+        </div>
         <p className="mt-4 font-semibold">
-          Ce portfolio est l&apos;aboutissement de mon parcours en formation, et
-          témoigne de ma passion pour le développement web et applicatif.
+          Ce portfolio est l&apos;aboutissement de{" "}
+          {
+            <Link href="/parcours">
+              <span className="inline-block underline hover:-translate-y-0.5">
+                mon parcours
+              </span>
+            </Link>
+          }{" "}
+          en formation, et témoigne de ma passion pour le développement web et
+          applicatif.
         </p>
         <br />
         <Link href="#projets">

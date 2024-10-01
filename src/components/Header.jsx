@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { RxHamburgerMenu } from "react-icons/rx";
 
 import ThemeToggle from "./ThemeToggle";
-import { Button } from "./ui/button";
 
 const Header = () => {
   return (
@@ -32,14 +30,6 @@ const Header = () => {
               href="#competences"
             >
               Compétences
-            </Link>
-          </li>
-          <li className="flex justify-center">
-            <Link
-              className="px-3 text-xs font-semibold max-[465px]:px-2 sm:text-lg"
-              href="#competences"
-            >
-              Mon parcours
             </Link>
           </li>
           <li className="flex justify-center">
