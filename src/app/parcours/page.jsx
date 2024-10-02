@@ -58,7 +58,10 @@ const ParcoursPage = () => {
           {items.map((item, index) => (
             <TimelineItem key={index}>
               <TimelineOppositeContent>
-                <Typography variant="body2" color="textSecondary">
+                <Typography
+                  className="text-lg text-zinc-900 dark:text-zinc-300"
+                  variant="body2"
+                >
                   {item.date}
                 </Typography>
               </TimelineOppositeContent>
