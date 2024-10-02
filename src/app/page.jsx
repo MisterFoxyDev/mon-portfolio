@@ -8,7 +8,7 @@ const HomePage = async () => {
 
   return (
     <section className="pb-24 pt-40">
-      <div className="container max-w-5xl space-y-20">
+      <div className="container space-y-20">
         <Intro />
         <ProjectsList projets={projets} />
         <CompetencesList />
