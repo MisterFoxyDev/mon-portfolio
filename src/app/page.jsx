@@ -7,12 +7,13 @@ const HomePage = async () => {
   const projets = await fetchProjectsFromDatabase();
 
   return (
-    <section className="pb-24 pt-40">
-      <div className="container space-y-20">
-        <Intro />
-        <ProjectsList projets={projets} />
-        <CompetencesList />
-      </div>
+    <section
+      id="homepage"
+      className="flex flex-col items-center space-y-20 pb-24 pt-40"
+    >
+      <Intro />
+      <ProjectsList projets={projets} />
+      <CompetencesList />
     </section>
   );
 };

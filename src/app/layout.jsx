@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
       <body className="flex min-h-screen w-screen flex-col items-center bg-zinc-200 antialiased dark:bg-zinc-900">
         <Providers>
           <Header />
-          <main className="flex w-[90dvw] grow">{children}</main>
+          <main className="mx-auto flex w-full flex-col items-center">
+            {children}
+          </main>
           <Footer />
           <Toaster
             position="bottom-center"
