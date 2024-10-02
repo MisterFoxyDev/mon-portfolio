@@ -26,7 +26,7 @@
       "secondaires": []
     },
     "staticImageUrl": "/images/booki.png",
-    "animatedImageUrl": "",
+    "animatedImageUrl": "/images/booki-animation-2.gif",
     "siteUrl": "https://misterfoxydev.github.io/booki-starter-code/"
   },
   {
@@ -49,7 +49,7 @@
         "jsonwebtoken"
       ]
     },
-    "staticImageUrl": "/images/eduquizz.png",
+    "staticImageUrl": "/images/eduquizz-2.png",
     "animatedImageUrl": "",
     "siteUrl": "https://eduquizz.fr"
   },

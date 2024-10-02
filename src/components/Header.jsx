@@ -16,26 +16,26 @@ const Header = () => {
         </div>
 
         <ul className="flex items-center px-3 text-sm sm:gap-10">
-          <li className="flex justify-center">
+          <li className="flex justify-center rounded-lg bg-zinc-400/70 hover:bg-zinc-400 dark:bg-zinc-500/70 dark:hover:bg-zinc-500">
             <Link
-              className="px-3 text-xs font-semibold max-[465px]:px-2 sm:text-lg"
+              className="px-3 text-sm font-medium max-[465px]:px-2 sm:text-lg"
               href="/#projets"
             >
               Projets
             </Link>
           </li>
-          <li className="flex justify-center">
+          <li className="flex justify-center rounded-lg bg-zinc-400/70 hover:bg-zinc-400 dark:bg-zinc-500/70 dark:hover:bg-zinc-500">
             <Link
-              className="px-3 text-xs font-semibold max-[465px]:px-2 sm:text-lg"
-              href="#competences"
+              className="px-3 text-sm font-medium max-[465px]:px-2 sm:text-lg"
+              href="/#competences"
             >
               Compétences
             </Link>
           </li>
-          <li className="flex justify-center">
+          <li className="flex justify-center rounded-lg bg-zinc-400/70 hover:bg-zinc-400 dark:bg-zinc-500/70 dark:hover:bg-zinc-500">
             <Link
-              className="px-3 text-xs font-semibold max-[465px]:px-2 sm:text-lg"
-              href="#"
+              className="px-3 text-sm font-medium max-[465px]:px-2 sm:text-lg"
+              href="/contact"
             >
               Contact
             </Link>

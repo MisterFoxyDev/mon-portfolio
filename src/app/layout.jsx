@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,11 +12,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className="flex min-h-screen flex-col bg-zinc-200 px-8 antialiased dark:bg-zinc-950">
+      <body className="flex min-h-screen flex-col bg-zinc-200 px-8 antialiased dark:bg-zinc-900">
         <Providers>
           <Header />
           <main className="grow">{children}</main>
           <Footer />
+          <Toaster
+            position="bottom-center"
+            gutter={12}
+            containerStyle={{ margin: "8px" }}
+            toastOptions={{
+              success: {
+                duration: 3000,
+              },
+              error: {
+                duration: 6000,
+              },
+              style: {
+                fontSize: "16px",
+                maxWidth: "500px",
+                padding: "16px 24px",
+                backgroundColor: "lightgrey",
+                color: "grey",
+              },
+            }}
+          />
         </Providers>
       </body>
     </html>

@@ -45,7 +45,7 @@ const ProjectCard = ({
       whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
       className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-transform duration-300 hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)] dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60"
     >
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-violet-800 via-blue-800 to-violet-600 bg-[length:400%_400%] opacity-70 dark:opacity-80"></div>
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-violet-800 via-blue-800 to-violet-600 bg-[length:400%_400%] opacity-60 dark:opacity-80"></div>
       <div className="relative z-10 p-4">
         <div className="relative">
           <Image
@@ -82,7 +82,7 @@ const ProjectCard = ({
         </p>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="mb-2 text-blue-700 hover:underline focus:outline-none dark:text-blue-300"
+          className="mb-2 font-medium text-blue-700 hover:underline focus:outline-none dark:text-blue-300"
         >
           {isOpen ? (
             <>
@@ -101,14 +101,14 @@ const ProjectCard = ({
             </p>
             {technologies.secondaires.length > 0 && (
               <div>
-                <h3 className="text-base font-semibold">
+                <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-200">
                   Technologies secondaires:
                 </h3>
                 <ul className="mb-4 list-inside list-disc">
                   {technologies.secondaires.map((lib, index) => (
                     <li
                       key={index}
-                      className="text-zinc-600 dark:text-zinc-200"
+                      className="text-zinc-900 dark:text-zinc-200"
                     >
                       {lib}
                     </li>

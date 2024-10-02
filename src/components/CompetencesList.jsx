@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const CompetencesList = () => {
   return (
-    <section id="competences" className="text-zinc-600 dark:text-zinc-300">
+    <section id="competences" className="h-96 text-zinc-600 dark:text-zinc-300">
       <h1 className="mb-4 text-center font-serif text-2xl tracking-wider sm:text-3xl">
         {<BsAlignEnd className="inline-block text-sm sm:text-xl" />} Mes
         compétences {<GiSkills className="inline-block text-base sm:text-xl" />}{" "}
@@ -13,12 +13,30 @@ const CompetencesList = () => {
       </h1>
       <Tabs defaultValue="frontend" className="w-full">
         <TabsList className="mb-4 flex w-full justify-start space-x-0 overflow-x-auto whitespace-nowrap sm:justify-center sm:space-x-4">
-          <TabsTrigger value="frontend">Frontend</TabsTrigger>
-          <TabsTrigger value="backend">Backend</TabsTrigger>
-          <TabsTrigger value="transversales">
+          <TabsTrigger
+            className="hover:bg-zinc-300 dark:hover:bg-zinc-700"
+            value="frontend"
+          >
+            Frontend
+          </TabsTrigger>
+          <TabsTrigger
+            className="hover:bg-zinc-300 dark:hover:bg-zinc-700"
+            value="backend"
+          >
+            Backend
+          </TabsTrigger>
+          <TabsTrigger
+            className="hover:bg-zinc-300 dark:hover:bg-zinc-700"
+            value="transversales"
+          >
             Compétences Transversales
           </TabsTrigger>
-          <TabsTrigger value="technologies">Technologies et Outils</TabsTrigger>
+          <TabsTrigger
+            className="hover:bg-zinc-300 dark:hover:bg-zinc-700"
+            value="technologies"
+          >
+            Technologies et Outils
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="frontend">
           <div className="container mx-auto">
@@ -74,7 +92,7 @@ const CompetencesList = () => {
             </ul>
           </div>
         </TabsContent>
-        <TabsContent value="technologies">
+        <TabsContent value="technologies" className="hover:bg-zinc-300">
           <div className="container mx-auto">
             <h2 className="text-center text-xl font-semibold sm:text-2xl">
               Technologies et Outils

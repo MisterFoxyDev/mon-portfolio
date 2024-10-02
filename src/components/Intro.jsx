@@ -10,7 +10,15 @@ import {
   SiReact,
   SiNodedotjs,
   SiNextdotjs,
+  SiMongodb,
+  SiSupabase,
 } from "react-icons/si";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const Intro = () => {
   return (
@@ -20,17 +28,14 @@ const Intro = () => {
           Salut ! Je suis{" "}
           <span>
             <ReactTyped
-              startWhenVisible
               strings={["Hugo.", "ton futur développeur !"]}
               loop
               typeSpeed={80}
               backSpeed={60}
-              smartBackspace
               shuffle={false}
               backDelay={1500}
               fadeOut={true}
               fadeOutDelay={200}
-              loopCount={0}
               showCursor
               cursorChar="|"
             />
@@ -49,12 +54,72 @@ const Intro = () => {
           en UI/UX design, SEO, accessibilité,...
         </p>
         <div className="m-8 flex justify-center space-x-4">
-          <SiHtml5 className="text-4xl text-orange-600" />
-          <SiCss3 className="text-4xl text-blue-600" />
-          <SiJavascript className="text-4xl text-yellow-500" />
-          <SiReact className="text-4xl text-cyan-500" />
-          <SiNodedotjs className="text-4xl text-green-600" />
-          <SiNextdotjs className="text-4xl text-black dark:text-gray-200" />
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiHtml5 className="cursor-default text-4xl text-orange-600" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>HTML</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiCss3 className="cursor-default text-4xl text-blue-500" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>CSS</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiJavascript className="cursor-default text-4xl text-yellow-500" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>JavaScript</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiReact className="cursor-default text-4xl text-cyan-400" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>React</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiNodedotjs className="cursor-default text-4xl text-green-500" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Node.js</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiNextdotjs className="cursor-default text-4xl text-black dark:text-gray-200" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Next.js</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiMongodb className="cursor-default text-4xl text-green-600" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>MongoDB</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <SiSupabase className="cursor-default text-4xl text-green-400" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Supabase</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
         <p className="mt-4 text-center font-semibold">
           Ce portfolio est l&apos;aboutissement de{" "}
