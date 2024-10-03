@@ -1,8 +1,10 @@
-import Header from "@/components/Header";
-import "./globals.css";
-import Footer from "@/components/Footer";
-import Providers from "@/components/Providers";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
+
+import "./globals.css";
+import Providers from "@/components/Providers";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Hugo THOMAS",
@@ -45,6 +47,7 @@ export default function RootLayout({ children }) {
             }}
           />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
