@@ -7,7 +7,7 @@ const CompetencesList = () => {
   return (
     <section
       id="competences"
-      className="h-[27rem] text-zinc-600 dark:text-zinc-300"
+      className="h-[30rem] text-zinc-600 dark:text-zinc-300 sm:h-[25rem]"
     >
       <h1 className="mb-4 text-center font-serif text-2xl tracking-wider sm:text-3xl">
         {<BsAlignEnd className="inline-block text-sm sm:text-xl" />} Mes
