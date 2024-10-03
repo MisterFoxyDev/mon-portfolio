@@ -5,7 +5,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const CompetencesList = () => {
   return (
-    <section id="competences" className="h-96 text-zinc-600 dark:text-zinc-300">
+    <section
+      id="competences"
+      className="h-[27rem] text-zinc-600 dark:text-zinc-300"
+    >
       <h1 className="mb-4 text-center font-serif text-2xl tracking-wider sm:text-3xl">
         {<BsAlignEnd className="inline-block text-sm sm:text-xl" />} Mes
         compétences {<GiSkills className="inline-block text-base sm:text-xl" />}{" "}
@@ -107,7 +110,7 @@ const CompetencesList = () => {
                 call stack et heap, microtâches et callback queue, boucle
                 d&apos;événements, phases de capture et de bouillonnement, etc.)
               </li>
-              <li>Programmation fonctionelle et Orienté Objet</li>
+              <li>Programmation fonctionelle et Orientée Objet</li>
               <li>Notions de prompt engineering (IA)</li>
               <li>Gestion de régie publicitaire (Google AdSense)</li>
             </ul>

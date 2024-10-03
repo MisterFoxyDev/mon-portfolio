@@ -26,7 +26,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="border-corners container flex w-[40dvw] flex-col items-center justify-start">
+    <div className="border-corners container flex h-[70dvh] w-[80dvw] flex-col items-center justify-start">
       <h1 className="mb-20 inline-block font-serif text-2xl font-medium">
         <ReactTyped strings={["Contactez-moi"]} typeSpeed={40} />
       </h1>

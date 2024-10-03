@@ -55,7 +55,7 @@ const Intro = () => {
         des compétences en gestion de projet (notamment en Agile), en UI/UX
         design, SEO, accessibilité,...
       </p>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
