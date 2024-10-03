@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/android-chrome-512x512.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="flex min-h-screen w-screen flex-col items-center bg-zinc-100 antialiased dark:bg-zinc-900">
