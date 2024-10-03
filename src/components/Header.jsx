@@ -4,8 +4,8 @@ import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-zinc-200 bg-zinc-500/30 py-6 shadow-lg shadow-gray-500/60 backdrop-blur-sm dark:border-zinc-700 dark:bg-zinc-800/30 dark:shadow-gray-800/60">
-      <nav className="container flex max-w-6xl items-center justify-between px-3 max-[460px]:px-1">
+    <header className="fixed inset-x-0 top-0 z-50 w-[100dvw] border-b border-zinc-200 bg-zinc-500/30 py-6 shadow-lg shadow-gray-500/60 backdrop-blur-sm dark:border-zinc-700 dark:bg-zinc-800/30 dark:shadow-gray-800/60">
+      <nav className="container flex items-center justify-between px-3 max-[460px]:px-1">
         <div>
           <Link
             href="/"

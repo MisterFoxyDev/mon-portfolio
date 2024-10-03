@@ -11,7 +11,7 @@ const CompetencesList = () => {
         compétences {<GiSkills className="inline-block text-base sm:text-xl" />}{" "}
         {<BsAlignStart className="inline-block text-sm sm:text-xl" />}
       </h1>
-      <Tabs defaultValue="frontend" className="w-full">
+      <Tabs defaultValue="frontend" className="w-[80dvw]">
         <TabsList className="mb-4 flex w-full justify-start space-x-0 overflow-x-auto whitespace-nowrap sm:justify-center sm:space-x-4">
           <TabsTrigger
             className="hover:bg-zinc-300 dark:hover:bg-zinc-700"
@@ -92,7 +92,7 @@ const CompetencesList = () => {
             </ul>
           </div>
         </TabsContent>
-        <TabsContent value="technologies" className="hover:bg-zinc-300">
+        <TabsContent value="technologies">
           <div className="container mx-auto">
             <h2 className="text-center text-xl font-semibold sm:text-2xl">
               Technologies et Outils

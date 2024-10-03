@@ -20,9 +20,10 @@ export default function RootLayout({ children }) {
           </main>
           <Footer />
           <Toaster
+            id="toaster"
             position="bottom-center"
             gutter={12}
-            containerStyle={{ margin: "8px" }}
+            containerStyle={{ top: 0, left: 0, width: "100dvw" }}
             toastOptions={{
               success: {
                 duration: 3000,

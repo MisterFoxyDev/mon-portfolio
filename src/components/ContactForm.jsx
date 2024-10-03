@@ -16,7 +16,11 @@ const ContactForm = () => {
 
     toast.promise(sendContactEmail(email, message), {
       loading: "Envoi en cours...",
-      success: "Message envoyé avec succès !",
+      success: () => {
+        setEmail("");
+        setMessage("");
+        return "Message envoyé avec succès !";
+      },
       error: "Erreur lors de l'envoi du message. Veuillez réessayer.",
     });
   };
