@@ -58,7 +58,7 @@ const CompetencesList = () => {
               <li>Server-Side Rendering (SSR)</li>
               <li>
                 Gestion de données locales (Context API, useReducer, Redux
-                Toolkit)
+                Toolkit) et remote (React Query)
               </li>
             </ul>
           </div>
