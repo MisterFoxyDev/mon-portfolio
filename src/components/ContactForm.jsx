@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef } from "react";
 import { ReactTyped } from "react-typed";
 import toast from "react-hot-toast";
 import { MdOutgoingMail } from "react-icons/md";
@@ -8,17 +8,20 @@ import { MdOutgoingMail } from "react-icons/md";
 import sendContactEmail from "@/lib/sendContactEmail";
 
 const ContactForm = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const emailInputRef = useRef(null);
+  const messageInputRef = useRef(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    toast.promise(sendContactEmail(email, message), {
+    const currentEmail = emailInputRef.current.value;
+    const currentMessage = messageInputRef.current.value;
+
+    toast.promise(sendContactEmail(currentEmail, currentMessage), {
       loading: "Envoi en cours...",
       success: () => {
-        setEmail("");
-        setMessage("");
+        if (emailInputRef.current) emailInputRef.current.value = "";
+        if (messageInputRef.current) messageInputRef.current.value = "";
         return "Message envoyé avec succès !";
       },
       error: "Erreur lors de l'envoi du message. Veuillez réessayer.",
@@ -35,10 +38,9 @@ const ContactForm = () => {
           <label htmlFor="email">Adresse mail :</label>
           <input
             className="m-4 w-full rounded-lg bg-zinc-300 p-4"
+            ref={emailInputRef}
             type="email"
             id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
@@ -46,9 +48,8 @@ const ContactForm = () => {
           <label htmlFor="message">Votre message :</label>
           <textarea
             className="m-4 w-full rounded-lg bg-zinc-300 p-4"
+            ref={messageInputRef}
             id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
             required
           />
         </div>
