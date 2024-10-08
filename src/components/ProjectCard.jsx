@@ -21,25 +21,6 @@ const ProjectCard = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    if (animatedImageUrl) {
-      const img = document.createElement("img");
-      img.src = animatedImageUrl;
-      img.onload = () => {
-        console.log("Image pré-chargée");
-      };
-      img.onerror = () => {
-        console.error("Erreur lors du chargement de l'image");
-      };
-
-      document.body.appendChild(img);
-
-      return () => {
-        document.body.removeChild(img);
-      };
-    }
-  }, [animatedImageUrl]);
-
   const variants = {
     hidden: {
       opacity: 0,
