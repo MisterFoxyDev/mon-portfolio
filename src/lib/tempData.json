@@ -98,8 +98,11 @@
       "complete": "Dans le cadre d'un cours avancé sur React (Udemy/Jonas.io)."
     },
     "technologies": {
-      "principales": ["React", "React Query", "Supabase"],
+      "principales": ["React", "React Query", "Supabase", "Netlify"],
       "secondaires": [
+        "Recharts",
+        "date-fns",
+        "react-error-boundary",
         "Custom hooks",
         "Faker Api's",
         "React Hook Form",
@@ -112,6 +115,6 @@
     },
     "staticImageUrl": "/images/the-wild-oasis-2.png",
     "animatedImageUrl": "",
-    "siteUrl": ""
+    "siteUrl": "https://hugo-thomas-the-wild-oasis.netlify.app/"
   }
 ]
