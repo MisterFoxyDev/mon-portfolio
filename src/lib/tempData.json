@@ -10,7 +10,7 @@
       "principales": ["Typescript"],
       "secondaires": []
     },
-    "staticImageUrl": "/images/facturier.png",
+    "staticImageUrl": "/images/facturier.webp",
     "animatedImageUrl": "",
     "siteUrl": "https://misterfoxydev.github.io/Facturier-typescript/"
   },
@@ -49,7 +49,7 @@
         "jsonwebtoken"
       ]
     },
-    "staticImageUrl": "/images/eduquizz-2.png",
+    "staticImageUrl": "/images/eduquizz.webp",
     "animatedImageUrl": "",
     "siteUrl": "https://eduquizz.fr"
   },
@@ -71,7 +71,7 @@
       ],
       "secondaires": ["Convertisseur et compresseur d'image"]
     },
-    "staticImageUrl": "/images/rapport-lighthouse.png",
+    "staticImageUrl": "/images/rapport-lighthouse.webp",
     "animatedImageUrl": "/images/carducci-animation.gif",
     "siteUrl": "https://misterfoxydev.github.io/nina-carducci.github.io/"
   },
@@ -86,7 +86,7 @@
       "principales": ["CSS", "SASS", "méthodologie BEM"],
       "secondaires": ["organisation 7-1"]
     },
-    "staticImageUrl": "/images/natours.png",
+    "staticImageUrl": "/images/natours.webp",
     "animatedImageUrl": "/images/natours-animation.gif",
     "siteUrl": "https://misterfoxydev.github.io/Natours/"
   },
@@ -94,7 +94,7 @@
     "origine": "Udemy",
     "title": "The Wild Oasis",
     "description": {
-      "resume": "Application dashboard pour un site de réservation de logements",
+      "resume": "Application dashboard desktop pour un site de réservation de logements",
       "complete": "Dans le cadre d'un cours avancé sur React (Udemy/Jonas.io)."
     },
     "technologies": {
@@ -113,7 +113,7 @@
         "createPortal()"
       ]
     },
-    "staticImageUrl": "/images/the-wild-oasis-3.png",
+    "staticImageUrl": "/images/the-wild-oasis.webp",
     "animatedImageUrl": "",
     "siteUrl": "https://hugo-thomas-the-wild-oasis.netlify.app/"
   }

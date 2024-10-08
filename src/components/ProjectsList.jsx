@@ -7,7 +7,7 @@ const ProjectsList = ({ projets }) => {
   return (
     <section
       id="projets"
-      className="flex flex-col items-center overflow-x-hidden pt-24 text-zinc-600 dark:text-zinc-300"
+      className="flex flex-col items-center overflow-x-hidden pb-4 pt-24 text-zinc-600 dark:text-zinc-300"
     >
       <h1 className="mb-4 text-center font-serif text-2xl tracking-wider sm:text-3xl">
         {<BsAlignEnd className="inline-block text-sm sm:text-xl" />} Mes projets{" "}
