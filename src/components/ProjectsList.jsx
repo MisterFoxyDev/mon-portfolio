@@ -1,12 +1,9 @@
-import fetchProjectsFromDatabase from "@/lib/fetchProjectsFromDatabase";
-
 import { BsAlignEnd } from "react-icons/bs";
 import { BsAlignStart } from "react-icons/bs";
 import ProjectCard from "@/components/ProjectCard";
 import { FaLaptopCode } from "react-icons/fa";
 
-const ProjectsList = async () => {
-  const projets = await fetchProjectsFromDatabase();
+const ProjectsList = ({ projets }) => {
   return (
     <section
       id="projets"
