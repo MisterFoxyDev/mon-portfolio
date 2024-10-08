@@ -3,6 +3,9 @@ import Intro from "@/components/Intro";
 import ProjectsList from "@/components/ProjectsList";
 import fetchProjectsFromDatabase from "@/lib/fetchProjectsFromDatabase";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 60;
+
 const HomePage = async () => {
   const projets = await fetchProjectsFromDatabase();
   return (

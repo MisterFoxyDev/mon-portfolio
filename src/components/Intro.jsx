@@ -58,64 +58,64 @@ const Intro = () => {
       <div className="flex flex-wrap justify-center">
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger>
-              <SiHtml5 className="m-2 cursor-default text-4xl text-orange-600" />
+            <TooltipTrigger className="cursor-default">
+              <SiHtml5 className="m-2 text-4xl text-orange-600" />
             </TooltipTrigger>
             <TooltipContent>
               <p>HTML</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
-              <SiCss3 className="m-2 cursor-default text-4xl text-blue-500" />
+            <TooltipTrigger className="cursor-default">
+              <SiCss3 className="m-2 text-4xl text-blue-500" />
             </TooltipTrigger>
             <TooltipContent>
               <p>CSS</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
-              <SiJavascript className="m-2 cursor-default text-4xl text-yellow-500" />
+            <TooltipTrigger className="cursor-default">
+              <SiJavascript className="m-2 text-4xl text-yellow-500" />
             </TooltipTrigger>
             <TooltipContent>
               <p>JavaScript</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
-              <SiReact className="m-2 cursor-default text-4xl text-cyan-400" />
+            <TooltipTrigger className="cursor-default">
+              <SiReact className="m-2 text-4xl text-cyan-400" />
             </TooltipTrigger>
             <TooltipContent>
               <p>React</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
-              <SiNodedotjs className="m-2 cursor-default text-4xl text-green-500" />
+            <TooltipTrigger className="cursor-default">
+              <SiNodedotjs className="m-2 text-4xl text-green-500" />
             </TooltipTrigger>
             <TooltipContent>
               <p>Node.js</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
-              <SiNextdotjs className="m-2 cursor-default text-4xl text-black dark:text-gray-200" />
+            <TooltipTrigger className="cursor-default">
+              <SiNextdotjs className="m-2 text-4xl text-black dark:text-gray-200" />
             </TooltipTrigger>
             <TooltipContent>
               <p>Next.js</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
-              <SiMongodb className="m-2 cursor-default text-4xl text-green-600" />
+            <TooltipTrigger className="cursor-default">
+              <SiMongodb className="m-2 text-4xl text-green-600" />
             </TooltipTrigger>
             <TooltipContent>
               <p>MongoDB</p>
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
-              <SiSupabase className="m-2 cursor-default text-4xl text-green-400" />
+            <TooltipTrigger className="cursor-default">
+              <SiSupabase className="m-2 text-4xl text-green-400" />
             </TooltipTrigger>
             <TooltipContent>
               <p>Supabase</p>
