@@ -3,7 +3,7 @@
     "origine": "Udemy",
     "title": "Facturier",
     "description": {
-      "resume": "",
+      "resume": "Outil de création de factures et devis",
       "complete": "Projet tutoriel de Donkey Geek dans le cadre d'un cours complet sur Typescript (Udemy). Permet de créer, stocker et imprimer des devis et des factures."
     },
     "technologies": {
