@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { GoProjectSymlink } from "react-icons/go";
@@ -20,6 +20,13 @@ const ProjectCard = ({
   animationDirection,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (animatedImageUrl) {
+      const img = new Image();
+      img.src = animatedImageUrl;
+    }
+  }, [animatedImageUrl]);
 
   const variants = {
     hidden: {
@@ -53,6 +60,7 @@ const ProjectCard = ({
             alt={title}
             width={640}
             height={640}
+            loading="lazy"
             className={`mb-2 h-48 w-full rounded-lg object-fill ${
               animatedImageUrl ? "hover:opacity-0" : ""
             }`}
