@@ -31,6 +31,9 @@ const ProjectSchema = new mongoose.Schema(
     siteUrl: {
       type: String,
     },
+    repoUrl: {
+      type: String,
+    },
   },
   { collection: "Projets" },
 );

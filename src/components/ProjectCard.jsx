@@ -9,6 +9,7 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { GoProjectSymlink } from "react-icons/go";
 
 import { Button } from "./ui/button";
+import { SiGithub } from "react-icons/si";
 
 const ProjectCard = ({
   title,
@@ -17,6 +18,7 @@ const ProjectCard = ({
   staticImageUrl,
   animatedImageUrl,
   siteUrl,
+  repoUrl,
   animationDirection,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -123,7 +125,7 @@ const ProjectCard = ({
             </div>
           )}
         </div>
-        <div className="flex justify-center">
+        <div className="flex items-center justify-center">
           {siteUrl ? (
             <Link
               href={siteUrl}
@@ -135,6 +137,16 @@ const ProjectCard = ({
             </Link>
           ) : (
             <Button disabled={true}>En construction</Button>
+          )}
+          {repoUrl && (
+            <Link
+              className="ml-4"
+              href={repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiGithub className="text-xl text-black dark:text-gray-200" />
+            </Link>
           )}
         </div>
       </div>

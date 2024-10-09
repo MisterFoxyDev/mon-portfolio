@@ -27,6 +27,7 @@ const ProjectsList = memo(({ projets }) => {
               staticImageUrl={projet.staticImageUrl}
               animatedImageUrl={projet.animatedImageUrl}
               siteUrl={projet.siteUrl}
+              repoUrl={projet.repoUrl}
               animationDirection={animationDirection}
             />
           );

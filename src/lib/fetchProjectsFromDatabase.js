@@ -14,6 +14,7 @@ const fetchProjectsFromDatabase = async () => {
     staticImageUrl: project.staticImageUrl,
     animatedImageUrl: project.animatedImageUrl,
     siteUrl: project.siteUrl,
+    repoUrl: project.repoUrl,
   }));
 };
 

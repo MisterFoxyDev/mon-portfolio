@@ -12,7 +12,8 @@
     },
     "staticImageUrl": "/images/facturier.webp",
     "animatedImageUrl": "",
-    "siteUrl": "https://misterfoxydev.github.io/Facturier-typescript/"
+    "siteUrl": "https://misterfoxydev.github.io/Facturier-typescript/",
+    "repoUrl": "https://github.com/MisterFoxyDev/Facturier-typescript.git"
   },
   {
     "origine": "OpenClassrooms",
@@ -27,7 +28,8 @@
     },
     "staticImageUrl": "/images/booki.png",
     "animatedImageUrl": "/images/booki-animation.gif",
-    "siteUrl": "https://misterfoxydev.github.io/booki-starter-code/"
+    "siteUrl": "https://misterfoxydev.github.io/booki-starter-code/",
+    "repoUrl": "https://github.com/MisterFoxyDev/booki-starter-code.git"
   },
   {
     "origine": "Personnel",
@@ -51,7 +53,8 @@
     },
     "staticImageUrl": "/images/eduquizz.webp",
     "animatedImageUrl": "",
-    "siteUrl": "https://eduquizz.fr"
+    "siteUrl": "https://eduquizz.fr",
+    "repoUrl": ""
   },
   {
     "origine": "OpenClassrooms",
@@ -73,7 +76,8 @@
     },
     "staticImageUrl": "/images/rapport-lighthouse.webp",
     "animatedImageUrl": "/images/carducci-animation.gif",
-    "siteUrl": "https://misterfoxydev.github.io/nina-carducci.github.io/"
+    "siteUrl": "https://misterfoxydev.github.io/nina-carducci.github.io/",
+    "repoUrl": "https://github.com/MisterFoxyDev/nina-carducci.github.io.git"
   },
   {
     "origine": "Udemy",
@@ -88,7 +92,8 @@
     },
     "staticImageUrl": "/images/natours.webp",
     "animatedImageUrl": "/images/natours-animation.gif",
-    "siteUrl": "https://misterfoxydev.github.io/Natours/"
+    "siteUrl": "https://misterfoxydev.github.io/Natours/",
+    "repoUrl": "https://github.com/MisterFoxyDev/Natours.git"
   },
   {
     "origine": "Udemy",
@@ -115,6 +120,7 @@
     },
     "staticImageUrl": "/images/the-wild-oasis.webp",
     "animatedImageUrl": "",
-    "siteUrl": "https://hugo-thomas-the-wild-oasis.netlify.app/"
+    "siteUrl": "https://hugo-thomas-the-wild-oasis.netlify.app/",
+    "repoUrl": "https://github.com/MisterFoxyDev/the-wild-oasis.git"
   }
 ]
