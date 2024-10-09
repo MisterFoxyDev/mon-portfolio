@@ -131,9 +131,8 @@ const Intro = () => {
               mon parcours
             </span>
           </Link>
-        }{" "}
-        en formation, et témoigne de ma passion pour le développement web et
-        applicatif.
+        }
+        , et témoigne de ma passion pour le développement web et applicatif.
       </p>
       <br />
       <Link href="#projets">

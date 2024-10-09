@@ -34,6 +34,13 @@ const items = [
       "J'apprends les bases du développement web avec l'application MIMO. Je fais mes premiers pas dans les technologies HTML, CSS, JavaScript, Python, SQL",
   },
   {
+    date: "2023",
+    title: "Eduquizz",
+    subtitle: "Mon propre site",
+    detailedText:
+      "Sur l'impulsion d'un ami, je me fixe comme projet de créer et gérer seul un site de quiz. Je me sers de mes connaissances actuelles et de nombreuses recherches pour surmonter les difficultés qui surviennent.",
+  },
+  {
     date: "Début 2024",
     title: "Début de la formation",
     subtitle:

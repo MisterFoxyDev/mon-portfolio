@@ -40,6 +40,12 @@ const CompetencesList = () => {
           >
             Technologies et Outils
           </TabsTrigger>
+          <TabsTrigger
+            className="hover:bg-zinc-300 dark:hover:bg-zinc-700"
+            value="learning"
+          >
+            Apprentissage futur
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="frontend">
           <div className="container mx-auto">
@@ -71,6 +77,7 @@ const CompetencesList = () => {
             <ul className="list-inside list-disc">
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>API REST</li>
               <li>NoSQL (MongoDB + Mongoose)</li>
               <li>SQL (mySQL, PostgreSQL)</li>
               <li>Server Actions</li>
@@ -112,7 +119,23 @@ const CompetencesList = () => {
               </li>
               <li>Programmation fonctionelle et Orientée Objet</li>
               <li>Notions de prompt engineering (IA)</li>
+              <li>Déploiement Vercel, Netlify</li>
               <li>Gestion de régie publicitaire (Google AdSense)</li>
+            </ul>
+          </div>
+        </TabsContent>
+        <TabsContent value="learning">
+          <div className="container mx-auto">
+            <h2 className="text-center text-xl font-semibold sm:text-2xl">
+              Apprentissage futur
+            </h2>
+            <ul className="list-inside list-disc">
+              <li>PHP</li>
+              <li>Python</li>
+              <li>AWS</li>
+              <li>GraphQL</li>
+              <li>Nest.JS</li>
+              <li>Computer Science</li>
             </ul>
           </div>
         </TabsContent>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { GoProjectSymlink } from "react-icons/go";
@@ -43,7 +43,7 @@ const ProjectCard = ({
       transition={{ duration: 0.2 }}
       variants={variants}
       whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
-      className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-transform duration-300 hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)] dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60"
+      className="relative m-4 h-fit w-80 max-w-sm transform overflow-hidden rounded-lg border-2 border-zinc-600 shadow-[4px_4px_15px_rgba(0,0,0,0.7)] transition-all duration-100 dark:border-zinc-300 dark:shadow-none dark:shadow-gray-800/60 md:hover:shadow-[10px_10px_20px_rgba(9,9,9,0.6)]"
     >
       <div className="pointer-events-none absolute left-0 top-0 h-full w-full animate-gradient-bg bg-gradient-to-r from-violet-800 via-blue-800 to-violet-600 bg-[length:400%_400%] opacity-60 dark:opacity-80"></div>
       <div className="relative z-10 flex min-h-[500px] flex-col justify-between p-4">
