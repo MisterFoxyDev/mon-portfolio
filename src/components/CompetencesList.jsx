@@ -55,7 +55,7 @@ const CompetencesList = () => {
             <ul className="list-inside list-disc">
               <li>JavaScript moderne</li>
               <li>TypeScript</li>
-              <li>HTML, CSS</li>
+              <li>HTML5, CSS3</li>
               <li>React.js</li>
               <li>Next.js</li>
               <li>Tailwind CSS</li>
