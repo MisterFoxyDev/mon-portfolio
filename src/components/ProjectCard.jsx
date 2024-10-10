@@ -32,7 +32,7 @@ const ProjectCard = ({
           : animationDirection === "right"
           ? 100
           : 0,
-      y: animationDirection === "bottom" ? 100 : 0,
+      y: 0,
     },
     visible: { opacity: 1, x: 0, y: 0 },
   };

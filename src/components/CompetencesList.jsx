@@ -136,6 +136,7 @@ const CompetencesList = () => {
               <li>AWS</li>
               <li>GraphQL</li>
               <li>Nest.JS</li>
+              <li>Figma</li>
               <li>Computer Science</li>
             </ul>
           </div>
