@@ -44,7 +44,7 @@ const Intro = () => {
         </span>
       </h1>
       <p className="mt-4 text-justify font-medium">
-        Développeur web full-stack, junior mais <i>passionné</i>, j&apos;ai
+        Développeur web full-stack, junior mais <i>passionné</i> et <i>autodidacte</i>, j&apos;ai
         acquis de solides compétences dans les technologies <i>modernes</i> de
         développement, au travers d&apos;une formation rigoureuse et complète,
         alimentée par une grande curiosité et une soif d&apos;apprendre.
