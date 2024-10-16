@@ -9,13 +9,6 @@ const sendContactEmail = async (email, message) => {
     allowedAttributes: {},
   });
 
-  const escapedMessage = cleanMessage
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT),
@@ -31,12 +24,12 @@ const sendContactEmail = async (email, message) => {
       from: `"Portfolio Contact" <${process.env.EMAIL_FROM}>`,
       to: "misterfoxydev@gmail.com",
       subject: "Nouveau message de contact Portfolio",
-      text: `De: ${email}\n\nMessage: ${escapedMessage}\n\nCeci est un message automatique envoyé depuis le formulaire de contact Portfolio. Merci de ne pas y répondre directement.`,
+      text: `De: ${email}\n\nMessage: ${cleanMessage}\n\nCeci est un message automatique envoyé depuis le formulaire de contact Portfolio. Merci de ne pas y répondre directement.`,
       html: `
           <h2>Nouveau message de contact Portfolio</h2>
           <p><strong>De:</strong> ${email}</p>
           <p><strong>Message:</strong></p>
-          <p>${escapedMessage}</p> <!-- Utilisation du message désinfecté -->
+          <p>${cleanMessage}</p>
           <hr>
           <p><small>Ceci est un message automatique envoyé depuis le formulaire de contact Portfolio. Merci de ne pas y répondre directement.</small></p>
         `,
