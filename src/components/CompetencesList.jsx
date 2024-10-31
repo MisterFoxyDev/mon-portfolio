@@ -77,6 +77,7 @@ const CompetencesList = () => {
             <ul className="list-inside list-disc">
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>Postman</li>
               <li>API REST</li>
               <li>NoSQL (MongoDB + Mongoose)</li>
               <li>SQL (mySQL, PostgreSQL)</li>
