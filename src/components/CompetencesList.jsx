@@ -79,6 +79,7 @@ const CompetencesList = () => {
               <li>Express.js</li>
               <li>Postman</li>
               <li>API REST</li>
+              <li>Data modelling</li>
               <li>NoSQL (MongoDB + Mongoose)</li>
               <li>SQL (mySQL, PostgreSQL)</li>
               <li>Server Actions</li>
