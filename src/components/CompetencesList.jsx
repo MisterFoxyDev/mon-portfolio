@@ -61,7 +61,6 @@ const CompetencesList = () => {
               <li>Tailwind CSS</li>
               <li>SASS</li>
               <li>Client-Side Rendering (CSR)</li>
-              <li>Server-Side Rendering (SSR)</li>
               <li>
                 Gestion de données locales (Context API, useReducer, Redux
                 Toolkit) et remote (React Query)
@@ -78,9 +77,10 @@ const CompetencesList = () => {
               <li>Node.js</li>
               <li>Express.js</li>
               <li>Postman</li>
+              <li>Server-Side Rendering (SSR)</li>
               <li>Pug</li>
               <li>API REST</li>
-              <li>Data modelling</li>
+              <li>Data modeling</li>
               <li>NoSQL (MongoDB + Mongoose)</li>
               <li>SQL (mySQL, PostgreSQL)</li>
               <li>Server Actions</li>
