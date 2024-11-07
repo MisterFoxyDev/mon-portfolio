@@ -123,7 +123,7 @@ const CompetencesList = () => {
               <li>Programmation fonctionelle et Orientée Objet</li>
               <li>Notions de prompt engineering (IA)</li>
               <li>CRA, Vite</li>
-              <li>Déploiement Vercel, Netlify</li>
+              <li>Déploiement Vercel, Netlify, Railway</li>
               <li>Gestion de régie publicitaire (Google AdSense)</li>
             </ul>
           </div>

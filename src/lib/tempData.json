@@ -97,6 +97,37 @@
   },
   {
     "origine": "Udemy",
+    "title": "Natours-backend",
+    "description": {
+      "resume": "Backend pour le site Natours",
+      "complete": "Dans le cadre d'un cours avancé sur Node.js (Udemy/Jonas.io). Ce projet est la continuité du frontend de Natours, bien que cette fois je n'aie pas géré l'intégration. API RESTful complète et sécurisée, déployée avec Railway."
+    },
+    "technologies": {
+      "principales": ["Node.js", "Express", "MongoDB", "Mongoose"],
+      "secondaires": [
+        "JWT",
+        "bcrypt",
+        "pug",
+        "parcel",
+        "multer",
+        "sharp",
+        "nodemailer",
+        "slugify",
+        "validator",
+        "xss-clean",
+        "express-rate-limit",
+        "express-mongo-sanitize",
+        "helmet",
+        "hpp"
+      ]
+    },
+    "staticImageUrl": "/images/natours-backend.webp",
+    "animatedImageUrl": "",
+    "siteUrl": "https://natours-backend-production-8bae.up.railway.app/",
+    "repoUrl": "https://github.com/MisterFoxyDev/natours-backend.git"
+  },
+  {
+    "origine": "Udemy",
     "title": "The Wild Oasis",
     "description": {
       "resume": "Application dashboard desktop pour un site de réservation de logements",
