@@ -5,6 +5,9 @@ import { FaLaptopCode } from "react-icons/fa";
 import { memo } from "react";
 
 const ProjectsList = memo(({ projets }) => {
+  // Trier les projets par ordre alphabétique croissant selon le titre
+  const sortedProjets = projets.sort((a, b) => a.title.localeCompare(b.title));
+
   return (
     <section
       id="projets"
@@ -16,7 +19,7 @@ const ProjectsList = memo(({ projets }) => {
         {<BsAlignStart className="inline-block text-sm sm:text-xl" />}
       </h1>
       <div className="flex max-w-[80vw] flex-wrap justify-center gap-5 pb-7 sm:max-w-[50dvw]">
-        {projets.map((projet, index) => {
+        {sortedProjets.map((projet, index) => {
           const animationDirection = index % 2 === 0 ? "left" : "right";
           return (
             <ProjectCard

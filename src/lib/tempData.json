@@ -109,6 +109,7 @@
         "bcrypt",
         "pug",
         "parcel",
+        "API mapbox",
         "multer",
         "sharp",
         "nodemailer",
