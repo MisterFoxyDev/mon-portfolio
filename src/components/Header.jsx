@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import MediaQuery from "react-responsive";
 import ThemeToggle from "./ThemeToggle";
 import {
   NavigationMenu,
@@ -26,7 +25,7 @@ const Header = () => {
             HT
           </Link>
         </div>
-        <MediaQuery minWidth={550}>
+        <div className="hidden md:block">
           <ul className="flex items-center justify-between gap-1 px-2 text-sm sm:gap-10 sm:px-4">
             <li className="flex justify-center rounded-lg bg-zinc-400/70 hover:bg-zinc-400 dark:bg-zinc-500/70 dark:hover:bg-zinc-500">
               <Link
@@ -61,8 +60,8 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-        </MediaQuery>
-        <MediaQuery maxWidth={549}>
+        </div>
+        <div className="md:hidden">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -70,7 +69,6 @@ const Header = () => {
                   Menu
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="h-max bg-zinc-500/30 py-2">
-                  {/* <NavigationMenuLink>Link</NavigationMenuLink> */}
                   <ul className="flex flex-col items-center justify-between gap-4 p-2 text-sm sm:gap-10 sm:px-4">
                     <li className="flex justify-center rounded-lg bg-zinc-400/70 hover:bg-zinc-400 dark:bg-zinc-500/70 dark:hover:bg-zinc-500">
                       <Link
@@ -109,7 +107,7 @@ const Header = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-        </MediaQuery>
+        </div>
         <div>
           <ThemeToggle />
         </div>
