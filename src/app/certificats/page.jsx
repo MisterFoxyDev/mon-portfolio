@@ -34,6 +34,7 @@ const Certificatspage = () => {
           alt="Titre professionnel développeur informatique"
           width={800}
           height={500}
+          priority
         />
       </section>
       <section className="mb-6 flex w-[90dvw] min-w-[300px] flex-col items-center justify-center px-14">
