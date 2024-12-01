@@ -142,6 +142,18 @@ const Certificatspage = () => {
               <Card className="pt-6">
                 <CardContent>
                   <Image
+                    src="/certificats/udemy/certificat_javascript_udemy.webp"
+                    alt="Certificat de complétion : Javascript"
+                    width={800}
+                    height={500}
+                  />
+                </CardContent>
+              </Card>
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/2">
+              <Card className="pt-6">
+                <CardContent>
+                  <Image
                     src="/certificats/udemy/certificat_node_express_mongo_udemy.webp"
                     alt="Certificat de complétion : Node.js, Express et MongoDB"
                     width={800}
@@ -163,8 +175,8 @@ const Certificatspage = () => {
               </Card>
             </CarouselItem>
           </CarouselContent>
-          {/* <CarouselNext className="-translate-x-8 lg:h-12 lg:w-12" />
-          <CarouselPrevious className="translate-x-8 lg:h-12 lg:w-12" /> */}
+          <CarouselNext className="-translate-x-8 lg:h-12 lg:w-12" />
+          <CarouselPrevious className="translate-x-8 lg:h-12 lg:w-12" />
         </Carousel>
       </section>
     </div>

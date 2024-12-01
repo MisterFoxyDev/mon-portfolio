@@ -111,9 +111,9 @@ const CompetencesList = () => {
               Technologies et Outils
             </h2>
             <ul className="list-inside list-disc">
+              <li>Bases en PHP, Python, Swift, Sécurité web</li>
               <li>GitHub</li>
               <li>Performances web</li>
-              <li>Sécurité web</li>
               <li>
                 Connaissance approfondie des couches d&apos;abstraction de
                 JavaScript et de son fonctionnement interne (moteur et runtime,
