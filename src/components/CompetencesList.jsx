@@ -114,6 +114,7 @@ const CompetencesList = () => {
               <li>Bases en PHP, Python, Swift, Sécurité web</li>
               <li>GitHub</li>
               <li>Performances web</li>
+              <li>Tests unitaires (RTL, Jest)</li>
               <li>
                 Connaissance approfondie des couches d&apos;abstraction de
                 JavaScript et de son fonctionnement interne (moteur et runtime,

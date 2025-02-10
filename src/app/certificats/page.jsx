@@ -174,6 +174,18 @@ const Certificatspage = () => {
                 </CardContent>
               </Card>
             </CarouselItem>
+            <CarouselItem className="lg:basis-1/2">
+              <Card className="pt-6">
+                <CardContent>
+                  <Image
+                    src="/certificats/udemy/certificat_tests.webp"
+                    alt="Certificat de complétion : tests unitaires"
+                    width={800}
+                    height={500}
+                  />
+                </CardContent>
+              </Card>
+            </CarouselItem>
           </CarouselContent>
           <CarouselNext className="-translate-x-8 lg:h-12 lg:w-12" />
           <CarouselPrevious className="translate-x-8 lg:h-12 lg:w-12" />
